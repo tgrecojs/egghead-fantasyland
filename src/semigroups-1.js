@@ -1,5 +1,6 @@
 import test from "riteway";
-import { equals } from "ramda"
+import { equals } from "ramda";
+
 const Sum = value => ({
   value,
   concat: y => Sum(value + y.value)
