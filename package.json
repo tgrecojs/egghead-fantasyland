@@ -1,0 +1,32 @@
+{
+  "name": "video-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "monoid.js",
+  "scripts": {
+    "watch": "watch 'clear && npm run test:semigroups-1 -s' ./src",
+    "test:monoid": "riteway -r @babel/register -r @babel/polyfill 'src/monoid.js' | tap-nirvana",
+    "test:semigroups": "riteway -r @babel/register -r @babel/polyfill 'src/semigroups.js' | tap-nirvana"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crocks": "^0.12.4",
+    "daggy": "^1.4.0",
+    "immutable": "^4.0.0-rc.12",
+    "immutable-ext": "^1.1.5",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.9.0",
+    "babel-cli": "^6.26.0",
+    "riteway": "^6.1.2",
+    "tap-nirvana": "^1.1.0",
+    "watch": "^1.0.2"
+  }
+}
