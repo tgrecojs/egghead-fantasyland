@@ -4,9 +4,10 @@
   "description": "",
   "main": "monoid.js",
   "scripts": {
-    "watch": "watch 'clear && npm run test:s1 -s' ./src",
-    "test:monoid": "riteway -r @babel/register -r @babel/polyfill 'src/monoid.js' | tap-nirvana",
-    "test:s1": "riteway -r @babel/register -r @babel/polyfill 'src/semigroups-1.js' | tap-nirvana"
+    "watch": "watch 'clear && npm run test:monoid -s' ./src",
+    "test:monoid": "riteway -r @babel/register -r @babel/polyfill 'src/monoid-2.js' | tap-nirvana",
+    "test:s1": "riteway -r @babel/register -r @babel/polyfill 'src/semigroups-1.js' | tap-nirvana",
+    "test:s2": "riteway -r @babel/register -r @babel/polyfill 'src/semigroups-2.js' | tap-nirvana"
   },
   "keywords": [],
   "author": "",
